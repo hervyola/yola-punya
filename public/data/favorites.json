@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Foods",
+    "icon": "utensils",
+    "items": ["Steak", "Kebab", "Dimsum"]
+  },
+  {
+    "category": "Drinks",
+    "icon": "coffee",
+    "items": ["Cookies and Cream", "Matcha Latte", "Milkshake Coklat"]
+  },
+  {
+    "category": "Songs",
+    "icon": "music",
+    "items": [
+      "About You – The 1975",
+      "I Wanna Be Yours – the Arctic Monkeys",
+      "No 1 party anthem – the Arctic Monkeys",
+      "Always Love – D4vid, Hyunjin"
+    ]
+  }
+]

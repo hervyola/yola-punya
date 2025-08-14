@@ -1,0 +1,34 @@
+[
+  {
+    "id": "01",
+    "title": "WEB DEVELOPMENT",
+    "desc": "Collection of modern and interactive websites I've developed, focusing on UI/UX and performance.",
+    "images": ["/img/web1.png", "/img/web2.jpeg", " "],
+    "bgColor": "bg-[#F5EFEB]",
+    "textColor": "text-[#071952]"
+  },
+  {
+    "id": "02",
+    "title": "3D MODELING",
+    "desc": "3D artworks and product designs created using Blender, combining realism and creativity.",
+    "images": ["/img/modeling1.png", "/img/modeling2.jpeg", "/img/modeling3.png"],
+    "bgColor": "bg-[#E1EBF0]",
+    "textColor": "text-[#071952]"
+  },
+  {
+    "id": "03",
+    "title": "GAME 2D",
+    "desc": "2D games created with RPG Maker, featuring story-driven adventures and pixel art environments.",
+    "images": ["/img/game2d.png", "/img/game2d1.png", "/img/game2d3.png"],
+    "bgColor": "bg-[#F5EFEB]",
+    "textColor": "text-[#071952]"
+  },
+  {
+    "id": "04",
+    "title": "GAME 3D",
+    "desc": "3D games built with Unity, blending immersive gameplay and visually stunning worlds.",
+    "images": ["/img/game3d1.png", "/img/game3d2.png", "/img/game3d3.png"],
+    "bgColor": "bg-[#E1EBF0]",
+    "textColor": "text-[#071952]"
+  }
+]

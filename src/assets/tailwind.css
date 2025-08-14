@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/fonts/Barlow-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('/fonts/Poppins-ExtraBold.ttf');
+}
+
+:root {
+  --font-barlow: "Barlow", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-poppins-extrabold: "Poppins-ExtraBold", sans-serif;
+  --color-latar: #ffffff;
+  --color-garis: #f2f2f2;
+  --color-gold: #d6ab0f;
+  --color-gold-tua: #9b7e1e;
+  --color-kuning: #f5c063; 
+  --color-teks: #373015;
+  --color-teks-samping: #6b7280;
+}
+
+/* Tambahan dark mode */
+.dark {
+  --color-latar: #0e0d0c;
+  --color-teks: #fef3dc;
+  --color-garis: #2b2a29;
+  --color-gold: #d6ab0f;
+  --color-kuning: #eab308;
+  --color-teks-samping: #a3a3a3;
+}
+
+.font-signature {
+  font-family: 'Brush Script MT', cursive;
+}
