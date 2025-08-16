@@ -17,7 +17,7 @@ export default function Skills() {
     { icon: <FaVideo />, title: "Video Editing", desc: "CapCut, Adobe Premiere Pro, Canva" },
     { icon: <FaDatabase />, title: "Database Management", desc: "Supabase, MySQL" },
     { icon: <FaLaptopCode />, title: "Programming", desc: "Python, Java, C#, JavaScript, PHP" },
-    { icon: <FaTools />, title: "Software Tools", desc: "Figma, Excel, MS Project, StartUML, Laragon, Vercel, github" },
+    { icon: <FaTools />, title: "Software Tools", desc: "Figma, Excel, MS Project, StartUML, Laragon, Vercel, github, draw.io" },
   ];
 
   return (

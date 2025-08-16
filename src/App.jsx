@@ -31,6 +31,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Favorites from "./pages/Favorites";
 import Kontak from "./pages/Kontak";
+import DetailProjects from "./pages/DetailProjects";
 
 
 
@@ -47,6 +48,7 @@ function App() {
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/Skills" element={<Skills />} />
             <Route path="/Projects" element={<Projects />} />
+            <Route path="/projects/:categoryId/:projectId" element={<DetailProjects />} />
             <Route path="/Favorites" element={<Favorites />} />
             <Route path="/Kontak" element={<Kontak />} />
 
@@ -59,7 +61,7 @@ function App() {
             <Route path="/Error404" element={<Error404 />} />
           </Route>
 
-          
+
           <Route element={<AuthLayout />}>
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />

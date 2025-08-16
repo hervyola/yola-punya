@@ -3,32 +3,102 @@
     "id": "01",
     "title": "WEB DEVELOPMENT",
     "desc": "Collection of modern and interactive websites I've developed, focusing on UI/UX and performance.",
-    "images": ["/img/web1.png", "/img/web2.jpeg", " "],
     "bgColor": "bg-[#F5EFEB]",
-    "textColor": "text-[#071952]"
+    "textColor": "text-[#071952]",
+    "projects": [
+      {
+        "id": "01-1",
+        "title": "WEB DEVELOPMENT PROJECT 1",
+        "image": "/img/web1.png",
+        "fullDesc": "This category showcases my work in developing responsive and high-performance websites. Each project is designed with a balance between aesthetic appeal and functional user experience. I focus on implementing modern web technologies such as React, Tailwind CSS, and Laravel to create seamless navigation, interactive animations, and optimized loading speeds."
+      },
+      {
+        "id": "01-2",
+        "title": "WEB DEVELOPMENT PROJECT 2",
+        "image": "/img/web2.jpeg",
+        "fullDesc": "This category showcases my work in developing responsive and high-performance websites. Each project is designed with a balance between aesthetic appeal and functional user experience. I focus on implementing modern web technologies such as React, Tailwind CSS, and Laravel to create seamless navigation, interactive animations, and optimized loading speeds."
+      }
+    ]
   },
   {
     "id": "02",
     "title": "3D MODELING",
     "desc": "3D artworks and product designs created using Blender, combining realism and creativity.",
-    "images": ["/img/modeling1.png", "/img/modeling2.jpeg", "/img/modeling3.png"],
     "bgColor": "bg-[#E1EBF0]",
-    "textColor": "text-[#071952]"
+    "textColor": "text-[#071952]",
+    "projects": [
+      {
+        "id": "02-1",
+        "title": "3D MODELING PROJECT 1",
+        "image": "/img/modeling1.png",
+        "fullDesc": "A collection of my 3D modeling projects made with Blender, focusing on detailed textures, realistic lighting, and creative composition. These works include both conceptual designs and practical product visualizations, showcasing my ability to blend artistry with technical skills in rendering high-quality 3D scenes."
+      },
+      {
+        "id": "02-2",
+        "title": "3D MODELING PROJECT 2",
+        "image": "/img/modeling2.jpeg",
+        "fullDesc": "A collection of my 3D modeling projects made with Blender, focusing on detailed textures, realistic lighting, and creative composition. These works include both conceptual designs and practical product visualizations, showcasing my ability to blend artistry with technical skills in rendering high-quality 3D scenes."
+      },
+      {
+        "id": "02-3",
+        "title": "3D MODELING PROJECT 3",
+        "image": "/img/modeling3.png",
+        "fullDesc": "A collection of my 3D modeling projects made with Blender, focusing on detailed textures, realistic lighting, and creative composition. These works include both conceptual designs and practical product visualizations, showcasing my ability to blend artistry with technical skills in rendering high-quality 3D scenes."
+      }
+    ]
   },
   {
     "id": "03",
     "title": "GAME 2D",
     "desc": "2D games created with RPG Maker, featuring story-driven adventures and pixel art environments.",
-    "images": ["/img/game2d.png", "/img/game2d1.png", "/img/game2d3.png"],
     "bgColor": "bg-[#F5EFEB]",
-    "textColor": "text-[#071952]"
+    "textColor": "text-[#071952]",
+    "projects": [
+      {
+        "id": "03-1",
+        "title": "GAME 2D PROJECT 1",
+        "image": "/img/game2d.png",
+        "fullDesc": "This section highlights my 2D game development projects built with RPG Maker. These games feature engaging narratives, handcrafted pixel art environments, and strategic gameplay mechanics. I combine compelling storytelling with nostalgic visual styles to create immersive experiences for players."
+      },
+      {
+        "id": "03-2",
+        "title": "GAME 2D PROJECT 2",
+        "image": "/img/game2d1.png",
+        "fullDesc": "This section highlights my 2D game development projects built with RPG Maker. These games feature engaging narratives, handcrafted pixel art environments, and strategic gameplay mechanics. I combine compelling storytelling with nostalgic visual styles to create immersive experiences for players."
+      },
+      {
+        "id": "03-3",
+        "title": "GAME 2D PROJECT 3",
+        "image": "/img/game2d3.png",
+        "fullDesc": "This section highlights my 2D game development projects built with RPG Maker. These games feature engaging narratives, handcrafted pixel art environments, and strategic gameplay mechanics. I combine compelling storytelling with nostalgic visual styles to create immersive experiences for players."
+      }
+    ]
   },
   {
     "id": "04",
     "title": "GAME 3D",
     "desc": "3D games built with Unity, blending immersive gameplay and visually stunning worlds.",
-    "images": ["/img/game3d1.png", "/img/game3d2.png", "/img/game3d3.png"],
     "bgColor": "bg-[#E1EBF0]",
-    "textColor": "text-[#071952]"
+    "textColor": "text-[#071952]",
+    "projects": [
+      {
+        "id": "04-1",
+        "title": "GAME 3D PROJECT 1",
+        "image": "/img/game3d1.png",
+        "fullDesc": "A showcase of my 3D game projects developed in Unity, featuring realistic graphics, dynamic physics, and immersive environments. Each project focuses on delivering captivating gameplay, from open-world exploration to action-packed combat, ensuring both visual appeal and engaging interactivity."
+      },
+      {
+        "id": "04-2",
+        "title": "GAME 3D PROJECT 2",
+        "image": "/img/game3d2.png",
+        "fullDesc": "A showcase of my 3D game projects developed in Unity, featuring realistic graphics, dynamic physics, and immersive environments. Each project focuses on delivering captivating gameplay, from open-world exploration to action-packed combat, ensuring both visual appeal and engaging interactivity."
+      },
+      {
+        "id": "04-3",
+        "title": "GAME 3D PROJECT 3",
+        "image": "/img/game3d3.png",
+        "fullDesc": "A showcase of my 3D game projects developed in Unity, featuring realistic graphics, dynamic physics, and immersive environments. Each project focuses on delivering captivating gameplay, from open-world exploration to action-packed combat, ensuring both visual appeal and engaging interactivity."
+      }
+    ]
   }
 ]

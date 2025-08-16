@@ -1,29 +1,43 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     fetch("/data/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data))
+      .then((res) => {
+        if (!res.ok) throw new Error("Gagal memuat data projects");
+        return res.json();
+      })
+      .then((data) => setCategories(data || []))
       .catch((err) => console.error("Error loading projects:", err));
   }, []);
 
+  if (!categories.length) {
+    return (
+      <section className="min-h-screen flex items-center justify-center">
+        <p className="text-[#071952] text-lg font-medium">
+          Tidak ada data project yang tersedia.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section>
-      {projects.map((project, index) => (
+      {categories.map((category, index) => (
         <motion.div
-          key={project.id}
-          className={`${project.bgColor} min-h-screen flex items-center justify-center px-6 py-12`}
+          key={category.id || index}
+          className={`${category.bgColor || "bg-white"} min-h-screen flex items-center justify-center px-6 py-12`}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.2 }}
         >
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-            
-            {/* Teks besar kiri */}
+
+            {/* Teks kiri */}
             <motion.div
               className="flex flex-col justify-center"
               initial={{ opacity: 0, x: -50 }}
@@ -32,10 +46,10 @@ export default function Projects() {
               viewport={{ once: true }}
             >
               <h2 className="text-[3rem] font-extrabold text-[#071952] leading-none">
-                PROJECT {project.id}
+                PROJECT {category.id}
               </h2>
               <p className="font-signature text-3xl text-[#071952]">
-                {project.title}
+                {category.title}
               </p>
             </motion.div>
 
@@ -47,25 +61,27 @@ export default function Projects() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              {/* Gambar background dekorasi */}
+              {/* Background efek */}
               <img
                 src="/img/efek2.png"
-                alt="Background Decor"
+                alt="Background effect"
                 className="absolute top-1/2 left-1/2 w-[900px] h-[450px] -translate-x-1/2 -translate-y-1/2 opacity-40 z-0 pointer-events-none"
               />
 
-              {project.images.slice(0, 3).map((img, i) => (
+              {category.projects?.slice(0, 3).map((subProject, i) => (
                 <motion.div
-                  key={i}
+                  key={`${category.id}-img-${i}`}
                   className="overflow-hidden rounded-lg shadow-lg flex-1 relative z-10"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200 }}
                 >
-                  <img
-                    src={img}
-                    alt={`Project ${project.id} - ${i + 1}`}
-                    className="w-full h-[300px] object-cover"
-                  />
+                  <Link to={`/projects/${category.id}/${subProject.id}`}>
+                    <img
+                      src={subProject.image}
+                      alt={subProject.title}
+                      className="w-full h-[300px] object-cover"
+                    />
+                  </Link>
                 </motion.div>
               ))}
             </motion.div>
@@ -79,7 +95,7 @@ export default function Projects() {
               viewport={{ once: true }}
             >
               <p className="text-sm text-[#071952] leading-relaxed">
-                {project.desc}
+                {category.desc}
               </p>
             </motion.div>
           </div>
