@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaUserCircle, FaIdBadge, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-export default function Header() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
@@ -11,18 +11,18 @@ export default function Header() {
     { name: "Skills", to: "/skills" },
     { name: "Projects", to: "/projects" },
     { name: "Favorites", to: "/favorites" },
+
     { name: "Contact", to: "/kontak" },
   ];
 
-  const menuClass = ({ isActive }) =>
-    `px-4 py-2 text-sm md:text-base font-medium transition-colors relative
-     ${isActive ? "text-[#071952] font-bold" : "text-[#071952] hover:text-[#071952]"}`;
+  const menuClass =
+    "relative text-[#024D60] font-medium tracking-wide hover:text-[#088395] transition-colors";
 
   return (
-    <header className="bg-[#F5EFEB]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
+    <header className="bg-[#F5F8FB]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-10 py-4">
         {/* Logo */}
-        <div className="text-[#071952] font-bold text-xl md:text-2xl tracking-wide">
+        <div className="text-[#024D60] font-bold text-xl md:text-2xl tracking-wide">
           Yola Keren
         </div>
 
@@ -32,29 +32,32 @@ export default function Header() {
             <NavLink key={item.name} to={item.to} className={menuClass}>
               <div className="relative group">
                 {item.name}
-                {/* Garis bawah menu */}
-                <span className={`absolute left-0 -bottom-1 h-[2px] w-0 bg-[#071952] group-hover:w-full transition-all ${window.location.pathname === item.to ? "w-full" : ""}`}></span>
+                <span
+                  className={`absolute left-0 -bottom-1 h-[2px] w-0 bg-[#024D60] group-hover:w-full transition-all ${window.location.pathname === item.to ? "w-full" : ""
+                    }`}
+                ></span>
               </div>
             </NavLink>
           ))}
         </nav>
 
-
-
         {/* Mobile Toggle */}
-        <div className="md:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+        <div
+          className="md:hidden cursor-pointer text-[#024D60]"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#F5EFEB] px-6 py-4 space-y-3 flex flex-col items-center">
+        <div className="md:hidden bg-[#F5F8FB] px-6 py-4 space-y-3 flex flex-col items-center">
           {menuItems.map((item) => (
             <NavLink
               key={item.name}
               to={item.to}
-              className="w-full text-center text-[#071952] font-medium py-2 px-4 rounded hover:bg-[#071952] hover:text-white transition-colors"
+              className="w-full text-center text-[#024D60] font-medium py-2 px-4 rounded hover:bg-[#567C8D] hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

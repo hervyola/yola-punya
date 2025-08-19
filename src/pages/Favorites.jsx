@@ -15,77 +15,78 @@ export default function Favorites() {
   const getIcon = (iconName) => {
     switch (iconName) {
       case "utensils":
-        return <FaUtensils className="text-5xl text-[#024D60]" />;
+        return <FaUtensils className="text-3xl text-[#024D60]" />;
       case "coffee":
-        return <FaCoffee className="text-5xl text-[#024D60]" />;
+        return <FaCoffee className="text-3xl text-[#024D60]" />;
       case "music":
-        return <FaMusic className="text-5xl text-[#024D60]" />;
+        return <FaMusic className="text-3xl text-[#024D60]" />;
       default:
         return null;
     }
   };
 
   return (
-    <section className="relative bg-[#F5EFEB] min-h-screen flex flex-col items-center justify-center px-6 py-16 overflow-hidden">
-      {/* Decorative background image with floating animation */}
-      <motion.img
-        src="/img/as.png"
-        alt="Decoration"
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-0 right-0 w-[900px] h-[300px] md:w-[900px] md:h-[500px] opacity-20 pointer-events-none object-contain"
-      />
+    <section className="relative min-h-screen bg-[#F5F8FB] flex items-center justify-center px-6 py-16">
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        {/* LEFT: Vinyl Decoration */}
+        <div className="relative flex justify-center items-center">
+          <motion.img
+            src="/img/vinyl.png" // tambahin vinyl.png di /public/img/
+            alt="Vinyl Record"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="w-[300px] md:w-[600px] opacity-90 drop-shadow-lg"
+          />
+          {/* Tombol play/pause di atas vinyl */}
+          <button className="absolute bottom-10 bg-[#024D60] text-white px-4 py-2 rounded-full shadow-md">
+            ▶
+          </button>
+        </div>
 
-      {/* Header */}
-      <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center text-[2.5rem] md:text-[4rem] font-extrabold text-[#024D60] mb-12 drop-shadow-lg"
-      >
-        My Favorites
-      </motion.h1>
-
-      {/* Grid */}
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-10 z-10">
-        {favoritesData.map((fav, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
+        {/* RIGHT: Favorites List */}
+        <div className="flex flex-col">
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.6,
-              delay: index * 0.2, // kartu muncul satu per satu
-            }}
-            whileHover={{ scale: 1.05 }}
-            className="backdrop-blur-lg bg-white/60 rounded-3xl shadow-lg p-8 flex flex-col items-center text-center border border-white/50 transition-all duration-300 hover:shadow-2xl"
+            transition={{ duration: 0.8 }}
+            className="text-4xl font-extrabold text-[#024D60] mb-8"
           >
-            {/* Icon */}
-            <div className="mb-5">{getIcon(fav.icon)}</div>
+            My Favorites
+          </motion.h1>
 
-            {/* Category */}
-            <h2 className="text-2xl font-bold text-[#024D60] mb-6">
-              {fav.category}
-            </h2>
+          <div className="space-y-6">
+            {favoritesData.map((fav, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="flex items-center gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
+              >
+                {/* Icon */}
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-[#E4EEF5] rounded-full">
+                  {getIcon(fav.icon)}
+                </div>
 
-            {/* Items */}
-            <ul className="space-y-3 text-[#567C8D] font-medium">
-              {fav.items.map((item, i) => (
-                <motion.li
-                  key={i}
-                  whileHover={{
-                    backgroundColor: "#C8D9E6",
-                    color: "#024D60",
-                  }}
-                  transition={{ duration: 0.2 }}
-                  className="bg-[#F5EFEB] px-5 py-3 rounded-xl transition-colors duration-200"
-                >
-                  {item}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+                {/* Category + Items */}
+                <div>
+                  <h2 className="text-lg font-bold text-[#024D60]">{fav.category}</h2>
+                  <ul className="flex gap-2 text-sm text-gray-600 flex-wrap">
+                    {fav.items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="bg-[#F5F8FB] px-3 py-1 rounded-lg hover:bg-[#C8D9E6] hover:text-[#024D60] transition"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -25,24 +25,23 @@ export default function DetailProjects() {
 
   if (!project || !category)
     return (
-      <p className="text-center mt-20 text-[#071952] font-semibold text-xl">
-        Project tidak ditemukan.
+      <p className="text-center mt-20 text-[#024D60] font-semibold text-xl">
+        Project not found
       </p>
     );
 
   return (
-    <motion.div
-      className="min-h-screen flex items-center justify-center p-6"
-      style={{ backgroundColor: "#F5EFEB" }} // background page
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-16 bg-gradient-to-br from-[#F5F8FB] to-[#E6EEF3] overflow-hidden">
+
+      <motion.div
+        className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         {/* Teks kiri */}
         <motion.div
-          className="p-10 rounded-3xl flex flex-col justify-center shadow-2xl border border-white/20"
-          style={{ backgroundColor: "#E1EBF0" }} // background deskripsi
+          className="p-10 rounded-3xl flex flex-col justify-center shadow-2xl border border-white/20 bg-white/60 backdrop-blur-md"
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -55,7 +54,7 @@ export default function DetailProjects() {
           </p>
           <Link
             to="/projects"
-            className="mt-8 inline-block px-8 py-3 bg-[#3B6A91] text-white font-semibold rounded-2xl hover:bg-[#2b4f6c] transition-all duration-300 shadow-md"
+            className="mt-8 inline-block px-8 py-3 bg-[#567C8D] text-white font-semibold rounded-2xl hover:bg-[#024D60] transition-all duration-300 shadow-md"
           >
             ← Back to Projects
           </Link>
@@ -74,7 +73,7 @@ export default function DetailProjects() {
             className="rounded-3xl shadow-2xl max-h-[450px] object-cover border border-white/20 transition-transform duration-500 hover:scale-105 hover:shadow-3xl"
           />
         </motion.div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </section>
   );
 }

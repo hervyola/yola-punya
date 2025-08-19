@@ -2,7 +2,7 @@
   {
     "category": "Foods",
     "icon": "utensils",
-    "items": ["Steak", "Kebab", "Dimsum"]
+    "items": ["Kebab", "Dimsum"]
   },
   {
     "category": "Drinks",

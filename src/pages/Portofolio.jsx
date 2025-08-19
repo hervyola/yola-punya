@@ -6,7 +6,7 @@ import Kontak from "./Kontak";
 
 export default function Portofolio() {
   return (
-    <section className="bg-[#F5EFEB] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
+    <section className="bg-[#F5F8FB] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
       <div className="max-w-6xl w-full relative">
 
         {/* Small Header */}
@@ -53,7 +53,7 @@ export default function Portofolio() {
             <img
               src="/img/alext.png"
               alt="Smokey Effect"
-              className="absolute bottom-0 right-0 w-[clamp(80px,20vw,220px)] opacity-40 pointer-events-none"
+              className="absolute bottom-0 right-0 w-[clamp(80px,20vw,220px)] opacity-30 pointer-events-none"
             />
             <div className="relative z-30">
               <p className="text-[#024D60] font-medium text-[clamp(0.75rem,1.5vw,1.125rem)]">
@@ -101,6 +101,7 @@ export default function Portofolio() {
         <Skills />
       </motion.div>
 
+      {/* Contact Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -21,7 +21,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-[#F5EFEB] min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <section className="bg-[#F5F8FB] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
       {/* Title */}
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-[#024D60] mb-4"

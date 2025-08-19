@@ -18,7 +18,7 @@ export default function Projects() {
   if (!categories.length) {
     return (
       <section className="min-h-screen flex items-center justify-center">
-        <p className="text-[#071952] text-lg font-medium">
+        <p className="text-[#024D60] text-lg font-medium">
           Tidak ada data project yang tersedia.
         </p>
       </section>
@@ -45,10 +45,10 @@ export default function Projects() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[3rem] font-extrabold text-[#071952] leading-none">
+              <h2 className="text-[3rem] font-extrabold text-[#024D60] leading-none">
                 PROJECT {category.id}
               </h2>
-              <p className="font-signature text-3xl text-[#071952]">
+              <p className="font-signature text-3xl text-[#024D60]">
                 {category.title}
               </p>
             </motion.div>
@@ -94,7 +94,7 @@ export default function Projects() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm text-[#071952] leading-relaxed">
+              <p className="text-sm text-[#024D60] leading-relaxed">
                 {category.desc}
               </p>
             </motion.div>
