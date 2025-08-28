@@ -19,7 +19,7 @@ export default function Navbar() {
     "relative text-[#024D60] font-medium tracking-wide hover:text-[#088395] transition-colors";
 
   return (
-    <header className="bg-[#F5F8FB]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
+    <header className="bg-[#E8F1F5]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-10 py-4">
         {/* Logo */}
         <div className="text-[#024D60] font-bold text-xl md:text-2xl tracking-wide">

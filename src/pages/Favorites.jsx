@@ -32,7 +32,7 @@ export default function Favorites() {
         {/* LEFT: Vinyl Decoration */}
         <div className="relative flex justify-center items-center">
           <motion.img
-            src="/img/vinyl.png" // tambahin vinyl.png di /public/img/
+            src="/img/vinyl2.png" // tambahin vinyl.png di /public/img/
             alt="Vinyl Record"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
