@@ -31,6 +31,18 @@ export default function Kontak() {
                 <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#FFB2DD]/30 rounded-full filter blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F7D66E]/30 rounded-full filter blur-3xl animate-pulse"></div>
             </div>
+            <img
+                src="/img/bungabiru.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute -left-8 bottom-6 w-[130px] sm:w-[190px] md:w-[250px] opacity-75 pointer-events-none z-0"
+            />
+            <img
+                src="/img/bungakuning.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute right-0 top-8 w-[120px] sm:w-[170px] md:w-[220px] opacity-70 pointer-events-none z-0"
+            />
 
             <motion.div
                 className="relative max-w-3xl w-full text-center z-10"

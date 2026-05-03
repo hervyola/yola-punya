@@ -4,6 +4,18 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
   return (
     <section className="bg-[#FFFCF5] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
+      <img
+        src="/img/bungaungu.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -right-10 top-8 w-[130px] sm:w-[180px] md:w-[230px] opacity-80 pointer-events-none"
+      />
+      <img
+        src="/img/bunga.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -left-12 bottom-4 w-[120px] sm:w-[170px] md:w-[220px] opacity-70 pointer-events-none"
+      />
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}

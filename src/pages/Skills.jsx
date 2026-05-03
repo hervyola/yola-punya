@@ -22,6 +22,18 @@ export default function Skills() {
 
   return (
     <section className="bg-[#EAF0F9] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
+      <img
+        src="/img/orchid.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -right-12 bottom-0 w-[140px] sm:w-[210px] md:w-[280px] opacity-80 pointer-events-none"
+      />
+      <img
+        src="/img/bunga.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute left-4 top-8 w-[100px] sm:w-[150px] md:w-[190px] opacity-65 pointer-events-none"
+      />
       {/* Title */}
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-[#2D2D2B] mb-4"

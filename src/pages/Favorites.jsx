@@ -39,6 +39,18 @@ export default function Favorites() {
 
   return (
     <section className="relative min-h-screen bg-[#FEF8EF] flex items-center justify-center px-6 py-16">
+      <img
+        src="/img/bungabiru.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -right-16 top-4 w-[150px] sm:w-[230px] md:w-[310px] opacity-80 pointer-events-none z-0"
+      />
+      <img
+        src="/img/bunga.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -left-10 bottom-6 w-[130px] sm:w-[190px] md:w-[250px] opacity-70 pointer-events-none z-0"
+      />
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* LEFT: Vinyl + Music */}

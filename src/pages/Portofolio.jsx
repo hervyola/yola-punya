@@ -27,6 +27,18 @@ export default function Portofolio() {
         animate={{ x: [0, 34, -20, 0], scaleX: [1, 1.12, 0.96, 1], rotate: [0, 4, -3, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
+      <img
+        src="/img/bungasa.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -right-20 top-2 w-[230px] sm:w-[340px] md:w-[460px] lg:w-[560px] opacity-95 pointer-events-none z-0"
+      />
+      <img
+        src="/img/bunga.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -left-10 bottom-8 w-[130px] sm:w-[190px] md:w-[240px] opacity-85 pointer-events-none z-0"
+      />
       <div className="max-w-6xl w-full relative">
 
         {/* Small Header */}
@@ -46,7 +58,7 @@ export default function Portofolio() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           whileHover={{ letterSpacing: "0.04em", scale: 1.02 }}
-          className="text-center text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[7rem] font-extrabold text-[#FEF8EF] leading-none relative z-0 drop-shadow-[0_5px_0_rgba(45,45,43,0.14)]"
+          className="text-center text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[7rem] font-extrabold text-[#BDA6CE] leading-none relative z-0 drop-shadow-[0_5px_0_rgba(45,45,43,0.14)]"
         >
           MY PORTFOLIO
         </motion.h1>
@@ -76,16 +88,11 @@ export default function Portofolio() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="absolute bottom-4 right-2 sm:right-4 text-right z-20 max-w-[clamp(150px,40vw,300px)]"
           >
-            <img
-              src="/img/alext.png"
-              alt="Smokey Effect"
-              className="absolute bottom-0 right-0 w-[clamp(80px,20vw,220px)] opacity-30 pointer-events-none"
-            />
             <div className="relative z-30">
-              <p className="text-[#2D2D2B] font-medium text-[clamp(0.75rem,1.5vw,1.125rem)]">
+              <p className="text-[#462C7D] font-medium text-[clamp(0.75rem,1.5vw,1.125rem)]">
                 25 | 02 | 2005
               </p>
-              <p className="font-signature text-[#2D2D2B] text-[clamp(1.25rem,2.5vw,1.875rem)]">
+              <p className="font-signature text-[#462C7D] text-[clamp(1.25rem,2.5vw,1.875rem)]">
                 Hervyola Verin Febriani
               </p>
             </div>
@@ -96,9 +103,9 @@ export default function Portofolio() {
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute bottom-4 left-2 sm:left-4 text-left z-20 max-w-[clamp(160px,35vw,250px)]"
+            className="absolute bottom-4 left-2 sm:left-4 text-left z-20 max-w-[clamp(160px,35vw,280px)]"
           >
-            <p className="text-[#2D2D2B] font-bold leading-relaxed text-[clamp(0.7rem,1.4vw,0.875rem)]">
+            <p className="text-[#462C7D] font-bold leading-relaxed text-[clamp(0.7rem,1.4vw,0.875rem)]">
               Hi, I’m Hervyola Verin Febriani — a Frontend Developer Enthusiast, UI/UX Design Lover, and Web Designer</p>
           </motion.div>
         </div>

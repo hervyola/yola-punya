@@ -56,10 +56,10 @@ export default function Projects() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: index * 0.35 }}
           />
           <motion.img
-            src="/img/floral-projects.svg"
+            src="/img/orchid.png"
             alt=""
             aria-hidden="true"
-            className="absolute right-[-88px] top-0 h-full max-h-[760px] w-auto opacity-95 pointer-events-none z-0 hidden sm:block"
+            className="absolute right-[-120px] top-0 h-full max-h-[820px] w-auto opacity-95 pointer-events-none z-0 hidden sm:block"
             initial={{ opacity: 0, x: 90, rotate: 8 }}
             whileInView={{ opacity: 0.95, x: 0, rotate: [0, -2, 2, 0] }}
             viewport={{ once: false, amount: 0.35 }}
