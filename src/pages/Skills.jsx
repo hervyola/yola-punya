@@ -21,10 +21,10 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-[#F5F8FB] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
+    <section className="bg-[#EAF0F9] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
       {/* Title */}
       <motion.h2
-        className="text-4xl md:text-5xl font-bold text-[#024D60] mb-4"
+        className="text-4xl md:text-5xl font-bold text-[#2D2D2B] mb-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ export default function Skills() {
         My Skills
       </motion.h2>
       <motion.p
-        className="text-[#567C8D] text-lg max-w-xl text-center mb-12"
+        className="text-[#9AAA65] text-lg max-w-xl text-center mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
@@ -44,18 +44,18 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-[#E0D8D1] flex flex-col items-center text-center"
+            className="bg-[#FEF8EF] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-[#FFB2DD]/40 flex flex-col items-center text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: index * 0.2, duration: 0.5 }}
             whileHover={{
               y: -8,
-              boxShadow: "0px 8px 20px rgba(2, 77, 96, 0.2)",
+              boxShadow: "0px 8px 20px rgba(45, 45, 43, 0.16)",
             }}
           >
-            <div className="text-[#024D60] text-5xl mb-4">{skill.icon}</div>
-            <h3 className="text-xl font-semibold text-[#024D60] mb-2">{skill.title}</h3>
-            <p className="text-[#567C8D]">{skill.desc}</p>
+            <div className="text-[#9AAA65] text-5xl mb-4">{skill.icon}</div>
+            <h3 className="text-xl font-semibold text-[#2D2D2B] mb-2">{skill.title}</h3>
+            <p className="text-[#9AAA65]">{skill.desc}</p>
           </motion.div>
         ))}
       </div>

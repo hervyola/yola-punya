@@ -25,13 +25,13 @@ export default function DetailProjects() {
 
   if (!project || !category)
     return (
-      <p className="text-center mt-20 text-[#024D60] font-semibold text-xl">
+      <p className="text-center mt-20 text-[#2D2D2B] font-semibold text-xl">
         Project not found
       </p>
     );
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-16 bg-gradient-to-br from-[#F5F8FB] to-[#E6EEF3] overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-16 bg-gradient-to-br from-[#FFFCF5] to-[#B6CAE8] overflow-hidden">
 
       <motion.div
         className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center"
@@ -54,7 +54,7 @@ export default function DetailProjects() {
           </p>
           <Link
             to="/projects"
-            className="mt-8 inline-block px-8 py-3 bg-[#567C8D] text-white font-semibold rounded-2xl hover:bg-[#024D60] transition-all duration-300 shadow-md"
+            className="mt-8 inline-block px-8 py-3 bg-[#9AAA65] text-white font-semibold rounded-2xl hover:bg-[#2D2D2B] transition-all duration-300 shadow-md"
           >
             ← Back to Projects
           </Link>

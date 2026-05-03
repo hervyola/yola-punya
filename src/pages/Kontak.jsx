@@ -20,16 +20,16 @@ export default function Kontak() {
     };
 
     return (
-        <section className="relative bg-gradient-to-br from-[#F5F8FB] to-[#E8F1F5] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-[#FFFCF5] via-[#EAF0F9] to-[#B6CAE8] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-hidden">
             
             {/* Background efek */}
             <div className="absolute inset-0">
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#024D60]/10 via-transparent to-[#567C8D]/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#2D2D2B]/10 via-transparent to-[#9AAA65]/20"></div>
 
                 {/* Lingkaran blur */}
-                <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#024D60]/20 rounded-full filter blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#567C8D]/20 rounded-full filter blur-3xl animate-pulse"></div>
+                <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#FFB2DD]/30 rounded-full filter blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F7D66E]/30 rounded-full filter blur-3xl animate-pulse"></div>
             </div>
 
             <motion.div
@@ -40,7 +40,7 @@ export default function Kontak() {
             >
                 {/* Header */}
                 <motion.h2
-                    className="text-4xl font-extrabold text-[#024D60] mb-4"
+                    className="text-4xl font-extrabold text-[#2D2D2B] mb-4"
                     initial={{ opacity: 0, y: -15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -48,7 +48,7 @@ export default function Kontak() {
                     Get in Touch
                 </motion.h2>
                 <motion.p
-                    className="text-[#024D60] text-lg mb-10 opacity-80"
+                    className="text-[#2D2D2B] text-lg mb-10 opacity-80"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
@@ -96,7 +96,7 @@ export default function Kontak() {
                             className={`flex flex-col items-center justify-center bg-white p-5 rounded-2xl shadow-lg border border-gray-200 transition ${item.hover}`}
                         >
                             {item.icon}
-                            <span className="mt-2 text-sm text-[#024D60]">{item.text}</span>
+                            <span className="mt-2 text-sm text-[#2D2D2B]">{item.text}</span>
                         </motion.a>
                     ))}
                 </motion.div>
@@ -106,7 +106,7 @@ export default function Kontak() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setShowForm(!showForm)}
-                    className="px-8 py-3 bg-[#024D60] text-white rounded-full shadow-lg hover:shadow-xl transition"
+                    className="px-8 py-3 bg-[#2D2D2B] text-white rounded-full shadow-lg hover:shadow-xl transition"
                 >
                     {showForm ? "Close form" : "Send a message"}
                 </motion.button>
@@ -126,25 +126,25 @@ export default function Kontak() {
                                     type="text"
                                     placeholder="your name"
                                     whileFocus={{ scale: 1.02 }}
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#024D60] shadow-sm"
+                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#2D2D2B] shadow-sm"
                                 />
                                 <motion.input
                                     type="email"
                                     placeholder="your email"
                                     whileFocus={{ scale: 1.02 }}
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#024D60] shadow-sm"
+                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#2D2D2B] shadow-sm"
                                 />
                                 <motion.textarea
                                     placeholder="your message"
                                     rows="4"
                                     whileFocus={{ scale: 1.02 }}
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#024D60] shadow-sm"
+                                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#2D2D2B] shadow-sm"
                                 ></motion.textarea>
                                 <motion.button
                                     type="submit"
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.97 }}
-                                    className="w-full bg-[#024D60] text-white px-4 py-2 rounded-lg hover:shadow-md transition"
+                                    className="w-full bg-[#2D2D2B] text-white px-4 py-2 rounded-lg hover:shadow-md transition"
                                 >
                                     Send
                                 </motion.button>

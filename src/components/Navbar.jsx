@@ -16,13 +16,13 @@ export default function Navbar() {
   ];
 
   const menuClass =
-    "relative text-[#024D60] font-medium tracking-wide hover:text-[#088395] transition-colors";
+    "relative text-[#2D2D2B] font-medium tracking-wide hover:text-[#9AAA65] transition-colors";
 
   return (
-    <header className="bg-[#E8F1F5]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
+    <header className="bg-[#FFFCF5]/90 backdrop-blur-md w-full sticky top-0 z-50 shadow-none">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-10 py-4">
         {/* Logo */}
-        <div className="text-[#024D60] font-bold text-xl md:text-2xl tracking-wide">
+        <div className="text-[#2D2D2B] font-bold text-xl md:text-2xl tracking-wide">
           Yola Keren
         </div>
 
@@ -33,7 +33,7 @@ export default function Navbar() {
               <div className="relative group">
                 {item.name}
                 <span
-                  className={`absolute left-0 -bottom-1 h-[2px] w-0 bg-[#024D60] group-hover:w-full transition-all ${window.location.pathname === item.to ? "w-full" : ""
+                  className={`absolute left-0 -bottom-1 h-[2px] w-0 bg-[#9AAA65] group-hover:w-full transition-all ${window.location.pathname === item.to ? "w-full" : ""
                     }`}
                 ></span>
               </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <div
-          className="md:hidden cursor-pointer text-[#024D60]"
+          className="md:hidden cursor-pointer text-[#2D2D2B]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -52,12 +52,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#F5F8FB] px-6 py-4 space-y-3 flex flex-col items-center">
+        <div className="md:hidden bg-[#FFFCF5] px-6 py-4 space-y-3 flex flex-col items-center">
           {menuItems.map((item) => (
             <NavLink
               key={item.name}
               to={item.to}
-              className="w-full text-center text-[#024D60] font-medium py-2 px-4 rounded hover:bg-[#567C8D] hover:text-white transition-colors"
+              className="w-full text-center text-[#2D2D2B] font-medium py-2 px-4 rounded hover:bg-[#9AAA65] hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

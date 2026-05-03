@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
-    <section className="bg-[#F5F8FB] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
+    <section className="bg-[#FFFCF5] min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
@@ -21,7 +21,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[2.5rem] md:text-[3rem] font-extrabold text-[#024D60] uppercase mb-6 relative z-10 border-l-8 border-[#024D60] pl-4"
+            className="text-[2.5rem] md:text-[3rem] font-extrabold text-[#2D2D2B] uppercase mb-6 relative z-10 border-l-8 border-[#9AAA65] pl-4"
           >
             About Me
           </motion.h2>
@@ -30,7 +30,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg text-[#024D60] leading-relaxed mb-6 relative z-10"
+            className="text-lg text-[#2D2D2B] leading-relaxed mb-6 relative z-10"
           >
             Hi! I’m <strong>Hervyola Verin Febriani</strong>, born in Rengat on February 25, 2005.
             I am a passionate developer with a strong interest in technology,
@@ -43,7 +43,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-base text-[#567C8D] leading-relaxed relative z-10 italic"
+            className="text-base text-[#9AAA65] leading-relaxed relative z-10 italic"
           >
             With a high level of curiosity and eagerness to learn, I believe every
             project is an opportunity to grow and deliver my very best.
@@ -57,9 +57,9 @@ export default function AboutMe() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="relative flex flex-col items-center"
         >
-          <div className="rounded-3xl overflow-hidden border-4 border-[#C8D9E6] shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="rounded-3xl overflow-hidden border-4 border-[#B6CAE8] shadow-xl hover:scale-105 transition-transform duration-300">
             <img
-              src="/img/gy.jpg"
+              src="/img/aboutu.jpg"
               alt="About Me"
               className="object-cover h-[300px] w-[340px] md:h-[280px] md:w-[500px]"
             />
@@ -78,7 +78,7 @@ export default function AboutMe() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-5xl md:text-6xl font-signature text-[#071952] relative z-10 tracking-wide"
+              className="text-5xl md:text-6xl font-signature text-[#2D2D2B] relative z-10 tracking-wide"
             >
               Introduction
             </motion.p>

@@ -4,7 +4,7 @@ import Header from "../components/Navbar";
 
 export default function MainLayout() {
     return (
-        <div className="bg-[#F5F8FB] min-h-screen flex">
+        <div className="bg-[#FFFCF5] min-h-screen flex">
             
             <div className="flex flex-row flex-1">
                 {/* <Footer/> */}
