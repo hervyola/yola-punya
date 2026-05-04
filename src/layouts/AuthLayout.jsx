@@ -8,7 +8,7 @@ export default function AuthLayout() {
         {/* Brand */}
         <div className="flex justify-center mb-4">
           <h1 className="text-4xl font-extrabold font-poppins tracking-wide text-[#015C3E]">
-            Lacof<span className="text-[#F5EFEB]">.</span>
+            Yola<span className="text-[#F5EFEB]">.</span>
           </h1>
         </div>
 

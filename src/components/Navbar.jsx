@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-10 py-4">
         {/* Logo */}
         <div className="text-[#2D2D2B] font-bold text-xl md:text-2xl tracking-wide">
-          Yola Keren
+          Hervyola Verin
         </div>
 
         {/* Desktop Menu */}
